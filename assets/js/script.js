@@ -1,37 +1,35 @@
-use 'strict'
+// Wait for the DOM to finish loading before running the game
+// Get the button elements and add event listeners to them
 
-function runGame () {
+document.addEventListener('DOMContentLoaded', function () {
+    let buttons = document.getElementsByTagName('button')
 
-}
+    for (let button of buttons) {
+        button.addEventListener('click', function () {
+            if (this.getAttribute('data-type') === 'submit') {
+                alert('You clicked Submit!')
+            } else {
+                let gameType = this.getAttribute('data-type')
+                alert(`You clicked ${gameType}`)
+            }
+        })
+    }
+})
 
-function checkAnswer() {
+function runGame() {}
 
-}
+function checkAnswer() {}
 
-function calculateAnswer() {
+function calculateAnswer() {}
 
-}
+function incrementScore() {}
 
-function incrementScore () {
+function incrementWrongAnswer() {}
 
-}
+function displayAdditionQuestion() {}
 
-function incrementWrongAnswer() {
+function displaySubtractionQuestion() {}
 
-}
+function displayMultiplicationQuestion() {}
 
-function displayAdditionQuestion () {
-
-}
-
-function displaySubtractionQuestion () {
-
-}
-
-function displayMultiplicationQuestion () {
-
-}
-
-function displayDivisionQuestion () {
-    
-}
+function displayDivisionQuestion() {}
