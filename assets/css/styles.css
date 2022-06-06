@@ -128,6 +128,7 @@ input {
 .fa-solid,
 fas {
     font-size: 3rem;
+    padding-top: 2rem;
 }
 
 .btn:focus {
@@ -150,7 +151,7 @@ fas {
     font-size: 1rem;
     color: #445361;
     position: relative;
-    top: 4.5rem;
+    top: 3.5rem;
 }
 
 .btn--blue {
